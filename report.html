@@ -1,0 +1,646 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CodeGuardian Security Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                color: #333;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            h1, h2, h3 {
+                color: #2c3e50;
+            }
+            .summary {
+                background-color: #f8f9fa;
+                border-radius: 5px;
+                padding: 20px;
+                margin-bottom: 30px;
+            }
+            .summary-table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            .summary-table th, .summary-table td {
+                padding: 10px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            .file-section {
+                margin-bottom: 40px;
+            }
+            .vulnerability-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            .vulnerability-table th, .vulnerability-table td {
+                padding: 10px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            .severity-critical {
+                color: #e74c3c;
+                font-weight: bold;
+            }
+            .severity-high {
+                color: #e67e22;
+                font-weight: bold;
+            }
+            .severity-medium {
+                color: #f39c12;
+                font-weight: bold;
+            }
+            .severity-low {
+                color: #27ae60;
+                font-weight: bold;
+            }
+            .severity-info {
+                color: #3498db;
+                font-weight: bold;
+            }
+            .recommendation {
+                background-color: #f8f9fa;
+                border-left: 4px solid #3498db;
+                padding: 10px;
+                margin-top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CodeGuardian Security Report</h1>
+        <p>Generated on: 2025-03-16 11:19:21</p>
+        
+        <div class="summary">
+            <h2>Vulnerability Summary</h2>
+            <table class="summary-table">
+                <tr>
+                    <th>Severity</th>
+                    <th>Count</th>
+                </tr>
+                <tr>
+                    <td><span class="severity-critical">Critical</span></td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td><span class="severity-high">High</span></td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td><span class="severity-medium">Medium</span></td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td><span class="severity-low">Low</span></td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td><span class="severity-info">Info</span></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>Total</th>
+                    <th>36</th>
+                </tr>
+            </table>
+        </div>
+    
+        <div class="file-section">
+            <h2>Vulnerabilities in Dependency: django@3.1.0</h2>
+            <table class="vulnerability-table">
+                <tr>
+                    <th>Line</th>
+                    <th>Severity</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Recommendation</th>
+                </tr>
+        
+                <tr>
+                    <td>0</td>
+                    <td><span class="severity-high">HIGH</span></td>
+                    <td>Vulnerable Dependency: django</td>
+                    <td>SQL injection vulnerability in Django ORM</td>
+                    <td>
+                        <div class="recommendation">
+                            Upgrade to Django 3.2.0 or later
+                        </div>
+                    </td>
+                </tr>
+            
+            </table>
+        </div>
+        
+        <div class="file-section">
+            <h2>Vulnerabilities in Dependency: express@4.17.1</h2>
+            <table class="vulnerability-table">
+                <tr>
+                    <th>Line</th>
+                    <th>Severity</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Recommendation</th>
+                </tr>
+        
+                <tr>
+                    <td>0</td>
+                    <td><span class="severity-high">HIGH</span></td>
+                    <td>Vulnerable Dependency: express</td>
+                    <td>Path traversal vulnerability in Express</td>
+                    <td>
+                        <div class="recommendation">
+                            Upgrade to Express 4.17.3 or later
+                        </div>
+                    </td>
+                </tr>
+            
+            </table>
+        </div>
+        
+        <div class="file-section">
+            <h2>Vulnerabilities in Dependency: lodash@4.17.20</h2>
+            <table class="vulnerability-table">
+                <tr>
+                    <th>Line</th>
+                    <th>Severity</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Recommendation</th>
+                </tr>
+        
+                <tr>
+                    <td>0</td>
+                    <td><span class="severity-critical">CRITICAL</span></td>
+                    <td>Vulnerable Dependency: lodash</td>
+                    <td>Prototype pollution vulnerability in Lodash</td>
+                    <td>
+                        <div class="recommendation">
+                            Upgrade to Lodash 4.17.21 or later
+                        </div>
+                    </td>
+                </tr>
+            
+            </table>
+        </div>
+        
+        <div class="file-section">
+            <h2>Vulnerabilities in Dependency: org.springframework:spring-core@5.3.0</h2>
+            <table class="vulnerability-table">
+                <tr>
+                    <th>Line</th>
+                    <th>Severity</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Recommendation</th>
+                </tr>
+        
+                <tr>
+                    <td>0</td>
+                    <td><span class="severity-critical">CRITICAL</span></td>
+                    <td>Vulnerable Dependency: org.springframework:spring-core</td>
+                    <td>Remote code execution vulnerability in Spring Framework</td>
+                    <td>
+                        <div class="recommendation">
+                            Upgrade to Spring Framework 5.3.20 or later
+                        </div>
+                    </td>
+                </tr>
+            
+            </table>
+        </div>
+        
+        <div class="file-section">
+            <h2>Vulnerabilities in tests\test_vulnerable.py</h2>
+            <table class="vulnerability-table">
+                <tr>
+                    <th>Line</th>
+                    <th>Severity</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Recommendation</th>
+                </tr>
+        
+                <tr>
+                    <td>16</td>
+                    <td><span class="severity-high">HIGH</span></td>
+                    <td>Hardcoded Secrets</td>
+                    <td>Hardcoded credentials or secrets were found in the code.</td>
+                    <td>
+                        <div class="recommendation">
+                            Store secrets in environment variables or a secure vault.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>17</td>
+                    <td><span class="severity-high">HIGH</span></td>
+                    <td>Hardcoded Secrets</td>
+                    <td>Hardcoded credentials or secrets were found in the code.</td>
+                    <td>
+                        <div class="recommendation">
+                            Store secrets in environment variables or a secure vault.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>31</td>
+                    <td><span class="severity-critical">CRITICAL</span></td>
+                    <td>Command Injection</td>
+                    <td>Potential command injection vulnerability detected.</td>
+                    <td>
+                        <div class="recommendation">
+                            Avoid using shell commands with user input. If necessary, use proper input validation and sanitization.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>34</td>
+                    <td><span class="severity-critical">CRITICAL</span></td>
+                    <td>Command Injection</td>
+                    <td>Potential command injection vulnerability detected.</td>
+                    <td>
+                        <div class="recommendation">
+                            Avoid using shell commands with user input. If necessary, use proper input validation and sanitization.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>61</td>
+                    <td><span class="severity-critical">CRITICAL</span></td>
+                    <td>Command Injection</td>
+                    <td>Potential command injection vulnerability detected.</td>
+                    <td>
+                        <div class="recommendation">
+                            Avoid using shell commands with user input. If necessary, use proper input validation and sanitization.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>105</td>
+                    <td><span class="severity-high">HIGH</span></td>
+                    <td>Path Traversal</td>
+                    <td>Potential path traversal vulnerability detected.</td>
+                    <td>
+                        <div class="recommendation">
+                            Validate and sanitize file paths. Use path normalization functions.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>56</td>
+                    <td><span class="severity-medium">MEDIUM</span></td>
+                    <td>Insecure Hash Algorithm</td>
+                    <td>Usage of cryptographically weak hash algorithm detected.</td>
+                    <td>
+                        <div class="recommendation">
+                            Use strong cryptographic hash functions like SHA-256 or SHA-3.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>46</td>
+                    <td><span class="severity-high">HIGH</span></td>
+                    <td>Insecure Deserialization</td>
+                    <td>Insecure deserialization using pickle module detected.</td>
+                    <td>
+                        <div class="recommendation">
+                            Avoid using pickle for untrusted data. Consider using JSON or other safer alternatives.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>40</td>
+                    <td><span class="severity-medium">MEDIUM</span></td>
+                    <td>Unsafe YAML Loading</td>
+                    <td>Unsafe YAML loading detected. This can lead to arbitrary code execution.</td>
+                    <td>
+                        <div class="recommendation">
+                            Use yaml.safe_load() instead of yaml.load().
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>72</td>
+                    <td><span class="severity-low">LOW</span></td>
+                    <td>Debug Mode Enabled</td>
+                    <td>Debug mode appears to be enabled in production code.</td>
+                    <td>
+                        <div class="recommendation">
+                            Disable debug mode in production environments.
+                        </div>
+                    </td>
+                </tr>
+            
+            </table>
+        </div>
+        
+        <div class="file-section">
+            <h2>Vulnerabilities in tests\test_vulnerable_js.js</h2>
+            <table class="vulnerability-table">
+                <tr>
+                    <th>Line</th>
+                    <th>Severity</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Recommendation</th>
+                </tr>
+        
+                <tr>
+                    <td>8</td>
+                    <td><span class="severity-high">HIGH</span></td>
+                    <td>Hardcoded Secrets</td>
+                    <td>Hardcoded credentials or secrets were found in the code.</td>
+                    <td>
+                        <div class="recommendation">
+                            Store secrets in environment variables or a secure vault.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>9</td>
+                    <td><span class="severity-high">HIGH</span></td>
+                    <td>Hardcoded Secrets</td>
+                    <td>Hardcoded credentials or secrets were found in the code.</td>
+                    <td>
+                        <div class="recommendation">
+                            Store secrets in environment variables or a secure vault.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>13</td>
+                    <td><span class="severity-high">HIGH</span></td>
+                    <td>Hardcoded Secrets</td>
+                    <td>Hardcoded credentials or secrets were found in the code.</td>
+                    <td>
+                        <div class="recommendation">
+                            Store secrets in environment variables or a secure vault.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>33</td>
+                    <td><span class="severity-critical">CRITICAL</span></td>
+                    <td>Command Injection</td>
+                    <td>Potential command injection vulnerability detected.</td>
+                    <td>
+                        <div class="recommendation">
+                            Avoid using shell commands with user input. If necessary, use proper input validation and sanitization.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>36</td>
+                    <td><span class="severity-high">HIGH</span></td>
+                    <td>Dangerous Function Evaluation</td>
+                    <td>Usage of eval() or other functions that can execute strings as code.</td>
+                    <td>
+                        <div class="recommendation">
+                            Avoid using eval() and similar functions. Use safer alternatives.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>21</td>
+                    <td><span class="severity-high">HIGH</span></td>
+                    <td>DOM-based XSS</td>
+                    <td>Potential DOM-based XSS vulnerability detected.</td>
+                    <td>
+                        <div class="recommendation">
+                            Use textContent or innerText instead of innerHTML when possible. Otherwise, sanitize input properly.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>85</td>
+                    <td><span class="severity-medium">MEDIUM</span></td>
+                    <td>Insecure CORS Configuration</td>
+                    <td>CORS is configured to allow all origins, which may lead to security issues.</td>
+                    <td>
+                        <div class="recommendation">
+                            Restrict CORS to specific trusted origins instead of using a wildcard.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>69</td>
+                    <td><span class="severity-medium">MEDIUM</span></td>
+                    <td>Prototype Pollution</td>
+                    <td>Potential prototype pollution vulnerability detected.</td>
+                    <td>
+                        <div class="recommendation">
+                            Review the code at line 69 to ensure proper validation and sanitization.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>3</td>
+                    <td><span class="severity-low">LOW</span></td>
+                    <td>Insecure Direct Object References</td>
+                    <td>Potential insecure direct object references vulnerability detected.</td>
+                    <td>
+                        <div class="recommendation">
+                            Review the code at line 3 to ensure proper validation and sanitization.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>59</td>
+                    <td><span class="severity-high">HIGH</span></td>
+                    <td>Prototype Pollution</td>
+                    <td>Potential prototype pollution vulnerability detected.</td>
+                    <td>
+                        <div class="recommendation">
+                            Review the code at line 59 to ensure proper validation and sanitization.
+                        </div>
+                    </td>
+                </tr>
+            
+            </table>
+        </div>
+        
+        <div class="file-section">
+            <h2>Vulnerabilities in tests\test_vulnerable_java.java</h2>
+            <table class="vulnerability-table">
+                <tr>
+                    <th>Line</th>
+                    <th>Severity</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Recommendation</th>
+                </tr>
+        
+                <tr>
+                    <td>21</td>
+                    <td><span class="severity-high">HIGH</span></td>
+                    <td>Hardcoded Secrets</td>
+                    <td>Hardcoded credentials or secrets were found in the code.</td>
+                    <td>
+                        <div class="recommendation">
+                            Store secrets in environment variables or a secure vault.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>22</td>
+                    <td><span class="severity-high">HIGH</span></td>
+                    <td>Hardcoded Secrets</td>
+                    <td>Hardcoded credentials or secrets were found in the code.</td>
+                    <td>
+                        <div class="recommendation">
+                            Store secrets in environment variables or a secure vault.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>52</td>
+                    <td><span class="severity-critical">CRITICAL</span></td>
+                    <td>Command Injection</td>
+                    <td>Potential command injection vulnerability detected.</td>
+                    <td>
+                        <div class="recommendation">
+                            Avoid using shell commands with user input. If necessary, use proper input validation and sanitization.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>166</td>
+                    <td><span class="severity-high">HIGH</span></td>
+                    <td>Path Traversal</td>
+                    <td>Potential path traversal vulnerability detected.</td>
+                    <td>
+                        <div class="recommendation">
+                            Validate and sanitize file paths. Use path normalization functions.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>61</td>
+                    <td><span class="severity-high">HIGH</span></td>
+                    <td>Weak Cryptographic Algorithm</td>
+                    <td>Usage of cryptographically weak algorithm detected.</td>
+                    <td>
+                        <div class="recommendation">
+                            Use strong cryptographic algorithms like AES with appropriate key sizes.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>65</td>
+                    <td><span class="severity-high">HIGH</span></td>
+                    <td>Weak Cryptographic Algorithm</td>
+                    <td>Usage of cryptographically weak algorithm detected.</td>
+                    <td>
+                        <div class="recommendation">
+                            Use strong cryptographic algorithms like AES with appropriate key sizes.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>68</td>
+                    <td><span class="severity-high">HIGH</span></td>
+                    <td>Weak Cryptographic Algorithm</td>
+                    <td>Usage of cryptographically weak algorithm detected.</td>
+                    <td>
+                        <div class="recommendation">
+                            Use strong cryptographic algorithms like AES with appropriate key sizes.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>123</td>
+                    <td><span class="severity-high">HIGH</span></td>
+                    <td>Weak Cryptographic Algorithm</td>
+                    <td>Usage of cryptographically weak algorithm detected.</td>
+                    <td>
+                        <div class="recommendation">
+                            Use strong cryptographic algorithms like AES with appropriate key sizes.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>123</td>
+                    <td><span class="severity-high">HIGH</span></td>
+                    <td>Weak Cryptographic Algorithm</td>
+                    <td>Usage of cryptographically weak algorithm detected.</td>
+                    <td>
+                        <div class="recommendation">
+                            Use strong cryptographic algorithms like AES with appropriate key sizes.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>81</td>
+                    <td><span class="severity-medium">MEDIUM</span></td>
+                    <td>Predictable Random</td>
+                    <td>Usage of java.util.Random, which is not cryptographically secure.</td>
+                    <td>
+                        <div class="recommendation">
+                            Use java.security.SecureRandom for cryptographic purposes.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>25</td>
+                    <td><span class="severity-low">LOW</span></td>
+                    <td>Hardcoded IP Address</td>
+                    <td>Hardcoded IP address found in the code.</td>
+                    <td>
+                        <div class="recommendation">
+                            Store IP addresses in configuration files or environment variables.
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>51</td>
+                    <td><span class="severity-high">HIGH</span></td>
+                    <td>Race Condition</td>
+                    <td>Potential race condition vulnerability detected.</td>
+                    <td>
+                        <div class="recommendation">
+                            Review the code at line 51 to ensure proper validation and sanitization.
+                        </div>
+                    </td>
+                </tr>
+            
+            </table>
+        </div>
+        
+    </body>
+    </html>
+    
